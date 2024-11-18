@@ -43,6 +43,8 @@ function Tabbed({ content }) {
       ) : (
         <DifferentContent />
       )}
+
+      {TabContent({ item: content.at(0) })}
     </div>
   );
 }
@@ -90,6 +92,9 @@ function TabContent({ item }) {
     </div>
   );
 }
+
+console.log(<DifferentContent />);
+console.log(DifferentContent());
 
 function DifferentContent() {
   return (
